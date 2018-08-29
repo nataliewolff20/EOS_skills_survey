@@ -1,0 +1,19 @@
+{
+  "name": "eos_skills_survey",
+  "version": "1.0.0",
+  "description": "EOS Skills Survey 1",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nataliewolff20/EOS_skills_survey.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nataliewolff20/EOS_skills_survey/issues"
+  },
+  "homepage": "https://github.com/nataliewolff20/EOS_skills_survey#readme"
+}
