@@ -1,5 +1,7 @@
 * {
-  background: grey;
+  background: white;
+  font-family: Arial, cursive;
+
 }
 
 input[type=checkbox] {
@@ -8,16 +10,19 @@ input[type=checkbox] {
 }
 
 table{
-  border: solid black 1px;
+  /* border: solid black 1px; */
 }
 
 th {
-  color: pink;
+  color: black;
+  text-align: left;
+  font-size: 12px;
 }
 
 h2{
   font-size: 15px;
-  color: black;
+  background-color: navy;
+  color: white;
 }
 
 .choices {

@@ -115,9 +115,124 @@ $(document).ready(function(){
         });
         $("#learning_skills_totalDEVELOP").val(totalDEVELOP_4);
 
+      });
 
+      // 5. numerical data skills
+      $('input:checkbox').change(function(){
+        var totalUSE_5 = 0;
+        var totalENJOY_5 = 0;
+        var totalSTRENGTH_5 = 0;
+        var totalDEVELOP_5 = 0;
+
+        $('input:checkbox[id=USE][name=numerical_skills]:checked').each(function(){
+          totalUSE_5 += isNaN(parseInt($(this).val())) ? 0 : parseInt($(this).val());
+        });
+        $("#numerical_skills_totalUSE").val(totalUSE_5);
+
+        $('input:checkbox[id=ENJOY][name=numerical_skills]:checked').each(function(){
+          totalENJOY_5 += isNaN(parseInt($(this).val())) ? 0 : parseInt($(this).val());
+        });
+        $("#numerical_skills_totalENJOY").val(totalENJOY_5);
+
+        $('input:checkbox[id=STRENGTH][name=numerical_skills]:checked').each(function(){
+          totalSTRENGTH_5 += isNaN(parseInt($(this).val())) ? 0 : parseInt($(this).val());
+        });
+        $("#numerical_skills_totalSTRENGTH").val(totalSTRENGTH_5);
+
+        $('input:checkbox[id=DEVELOP][name=numerical_skills]:checked').each(function(){
+          totalDEVELOP_5 += isNaN(parseInt($(this).val())) ? 0 : parseInt($(this).val());
+        });
+        $("#numerical_skills_totalDEVELOP").val(totalDEVELOP_5);
 
       });
+
+      // 6. problem-solving  skills
+      $('input:checkbox').change(function(){
+        var totalUSE_6 = 0;
+        var totalENJOY_6 = 0;
+        var totalSTRENGTH_6 = 0;
+        var totalDEVELOP_6 = 0;
+
+        $('input:checkbox[id=USE][name=problem-solving_skills]:checked').each(function(){
+          totalUSE_6 += isNaN(parseInt($(this).val())) ? 0 : parseInt($(this).val());
+        });
+        $("#problem-solving_skills_totalUSE").val(totalUSE_6);
+
+        $('input:checkbox[id=ENJOY][name=problem-solving_skills]:checked').each(function(){
+          totalENJOY_6 += isNaN(parseInt($(this).val())) ? 0 : parseInt($(this).val());
+        });
+        $("#problem-solving_skills_totalENJOY").val(totalENJOY_6);
+
+        $('input:checkbox[id=STRENGTH][name=problem-solving_skills]:checked').each(function(){
+          totalSTRENGTH_6 += isNaN(parseInt($(this).val())) ? 0 : parseInt($(this).val());
+        });
+        $("#problem-solving_skills_totalSTRENGTH").val(totalSTRENGTH_6);
+
+        $('input:checkbox[id=DEVELOP][name=problem-solving_skills]:checked').each(function(){
+          totalDEVELOP_6 += isNaN(parseInt($(this).val())) ? 0 : parseInt($(this).val());
+        });
+        $("#problem-solving_skills_totalDEVELOP").val(totalDEVELOP_6);
+
+      });
+
+      // 7. result orientation skills
+      $('input:checkbox').change(function(){
+        var totalUSE_7 = 0;
+        var totalENJOY_7 = 0;
+        var totalSTRENGTH_7 = 0;
+        var totalDEVELOP_7 = 0;
+
+        $('input:checkbox[id=USE][name=result_orientation_skills]:checked').each(function(){
+          totalUSE_7 += isNaN(parseInt($(this).val())) ? 0 : parseInt($(this).val());
+        });
+        $("#result_orientation_skills_totalUSE").val(totalUSE_7);
+
+        $('input:checkbox[id=ENJOY][name=result_orientation_skills]:checked').each(function(){
+          totalENJOY_7 += isNaN(parseInt($(this).val())) ? 0 : parseInt($(this).val());
+        });
+        $("#result_orientation_skills_totalENJOY").val(totalENJOY_7);
+
+        $('input:checkbox[id=STRENGTH][name=result_orientation_skills]:checked').each(function(){
+          totalSTRENGTH_7 += isNaN(parseInt($(this).val())) ? 0 : parseInt($(this).val());
+        });
+        $("#result_orientation_skills_totalSTRENGTH").val(totalSTRENGTH_7);
+
+        $('input:checkbox[id=DEVELOP][name=result_orientation_skills]:checked').each(function(){
+          totalDEVELOP_7 += isNaN(parseInt($(this).val())) ? 0 : parseInt($(this).val());
+        });
+        $("#result_orientation_skills_totalDEVELOP").val(totalDEVELOP_7);
+
+      });
+
+      // 8. teamwork skills
+      $('input:checkbox').change(function(){
+        var totalUSE_8 = 0;
+        var totalENJOY_8 = 0;
+        var totalSTRENGTH_8 = 0;
+        var totalDEVELOP_8 = 0;
+
+        $('input:checkbox[id=USE][name=teamwork_skills]:checked').each(function(){
+          totalUSE_8 += isNaN(parseInt($(this).val())) ? 0 : parseInt($(this).val());
+        });
+        $("#teamwork_skills_totalUSE").val(totalUSE_8);
+
+        $('input:checkbox[id=ENJOY][name=teamwork_skills]:checked').each(function(){
+          totalENJOY_8 += isNaN(parseInt($(this).val())) ? 0 : parseInt($(this).val());
+        });
+        $("#teamwork_skills_totalENJOY").val(totalENJOY_8);
+
+        $('input:checkbox[id=STRENGTH][name=teamwork_skills]:checked').each(function(){
+          totalSTRENGTH_8 += isNaN(parseInt($(this).val())) ? 0 : parseInt($(this).val());
+        });
+        $("#teamwork_skills_totalSTRENGTH").val(totalSTRENGTH_8);
+
+        $('input:checkbox[id=DEVELOP][name=teamwork_skills]:checked').each(function(){
+          totalDEVELOP_8 += isNaN(parseInt($(this).val())) ? 0 : parseInt($(this).val());
+        });
+        $("#teamwork_skills_totalDEVELOP").val(totalDEVELOP_8);
+
+      });
+
 
 
 //end
