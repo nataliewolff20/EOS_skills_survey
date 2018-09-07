@@ -233,6 +233,63 @@ $(document).ready(function(){
 
       });
 
+      // 9. thinking skills
+      $('input:checkbox').change(function(){
+        var totalUSE_9 = 0;
+        var totalENJOY_9 = 0;
+        var totalSTRENGTH_9 = 0;
+        var totalDEVELOP_9 = 0;
+
+        $('input:checkbox[id=USE][name=thinking_skills]:checked').each(function(){
+          totalUSE_9 += isNaN(parseInt($(this).val())) ? 0 : parseInt($(this).val());
+        });
+        $("#thinking_skills_totalUSE").val(totalUSE_9);
+
+        $('input:checkbox[id=ENJOY][name=thinking_skills]:checked').each(function(){
+          totalENJOY_9 += isNaN(parseInt($(this).val())) ? 0 : parseInt($(this).val());
+        });
+        $("#thinking_skills_totalENJOY").val(totalENJOY_9);
+
+        $('input:checkbox[id=STRENGTH][name=thinking_skills]:checked').each(function(){
+          totalSTRENGTH_9 += isNaN(parseInt($(this).val())) ? 0 : parseInt($(this).val());
+        });
+        $("#thinking_skills_totalSTRENGTH").val(totalSTRENGTH_9);
+
+        $('input:checkbox[id=DEVELOP][name=thinking_skills]:checked').each(function(){
+          totalDEVELOP_9 += isNaN(parseInt($(this).val())) ? 0 : parseInt($(this).val());
+        });
+        $("#thinking_skills_totalDEVELOP").val(totalDEVELOP_9);
+
+      });
+      // 9. artistic skills
+      $('input:checkbox').change(function(){
+        var totalUSE_10 = 0;
+        var totalENJOY_10 = 0;
+        var totalSTRENGTH_10 = 0;
+        var totalDEVELOP_10 = 0;
+
+        $('input:checkbox[id=USE][name=artistic_skills]:checked').each(function(){
+          totalUSE_10 += isNaN(parseInt($(this).val())) ? 0 : parseInt($(this).val());
+        });
+        $("#artistic_skills_totalUSE").val(totalUSE_10);
+
+        $('input:checkbox[id=ENJOY][name=artistic_skills]:checked').each(function(){
+          totalENJOY_10 += isNaN(parseInt($(this).val())) ? 0 : parseInt($(this).val());
+        });
+        $("#artistic_skills_totalENJOY").val(totalENJOY_10);
+
+        $('input:checkbox[id=STRENGTH][name=artistic_skills]:checked').each(function(){
+          totalSTRENGTH_10 += isNaN(parseInt($(this).val())) ? 0 : parseInt($(this).val());
+        });
+        $("#artistic_skills_totalSTRENGTH").val(totalSTRENGTH_10);
+
+        $('input:checkbox[id=DEVELOP][name=artistic_skills]:checked').each(function(){
+          totalDEVELOP_10 += isNaN(parseInt($(this).val())) ? 0 : parseInt($(this).val());
+        });
+        $("#artistic_skills_totalDEVELOP").val(totalDEVELOP_10);
+
+      });
+
 
 
 //end
