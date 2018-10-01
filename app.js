@@ -259,6 +259,9 @@ $(document).ready(function(){
           totalDEVELOP_9 += isNaN(parseInt($(this).val())) ? 0 : parseInt($(this).val());
         });
         $("#thinking_skills_totalDEVELOP").val(totalDEVELOP_9);
+            //   $('#thinking_progressbar').val(
+            //   $('#thinking_progressbar').val()+5);
+            //   return false;
 
       });
       // 9. artistic skills
@@ -285,31 +288,42 @@ $(document).ready(function(){
 
         $('input:checkbox[id=DEVELOP][name=artistic_skills]:checked').each(function(){
           totalDEVELOP_10 += isNaN(parseInt($(this).val())) ? 0 : parseInt($(this).val());
-
-          // animateProgress(parseInt($(this).data('diff')));
         });
         $("#artistic_skills_totalDEVELOP").val(totalDEVELOP_10);
 
-      });
+        });
 
 
 
+
+
+// "#USE" , '[name="artistic_skills"]'
 
       // bar graph
 
-      $('.option').click(function(){
-        var $this = $(this);
-
-        if (!$this.data('voting'))
-        $this.data('voting', 0);
-
-        var voting = parseInt($this.data('voting'), 10);
-        voting ++;
-
-        $this.data('voting', voting);
-        $this.find('.score').html(voting);
-        $this.find('.progressbar').progressbar({value: voting});
+      $('input:checkbox[id=DEVELOP][name=artistic_skills]:checked').on('click', function(){
+        $('#artistic_progressbar').val($('#artistic_progressbar').val() + 5);
+        console.log('butts');
       });
+
+
+
+
+
+
+      // $('.option').click(function(){
+      //   var $this = $(this);
+      //
+      //   if (!$this.data('voting'))
+      //   $this.data('voting', 0);
+      //
+      //   var voting = parseInt($this.data('voting'), 10);
+      //   voting ++;
+      //
+      //   $this.data('voting', voting);
+      //   $this.find('.score').html(voting);
+      //   $this.find('.artistic_progressbar').progressbar({value: voting});
+      // });
 
 
 

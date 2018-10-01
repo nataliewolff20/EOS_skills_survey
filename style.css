@@ -3,8 +3,14 @@
   font-family: Arial, cursive;
 }
 
+.header, .skills_survey, .email_form {
+  margin-left: 50px;
+}
+
 .skills_survey{
-  font-size: 10px;
+  font-size: 15px;
+  margin: 20px 140px 20px 50px;
+
 }
 
 h3 {
@@ -47,8 +53,14 @@ th {
 
 h2{
   font-size: 15px;
-  background-color: navy;
+  background-color: #194387;
   color: white;
+  text-align: left;
+  height: 20px;
+  margin: 20px 150px 20px 50px;
+  padding: 15px 0;
+
+
 }
 
 /*
