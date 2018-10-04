@@ -4,11 +4,14 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
     <script src="app.js" charset="utf-8"></script>
+    <script src="chart.js" charset="utf-8"></script>
     <link rel="stylesheet" href="style.css">
     <title>EOS</title>
   </head>
 
   <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+    <canvas id="barchart"></canvas>
 
     <div class="header">
       <img src="https://i.imgur.com/MgGIfrO.png" alt="EOS Logo">
@@ -879,10 +882,10 @@
         </tr>
         <tr>
           <th>Developing new approaches</th>
-          <th> <input type="checkbox" id="USE" name="artistic_skills" value="1"></th>
-          <th> <input type="checkbox" id="ENJOY" name="artistic_skills" value="1"></th>
-          <th> <input type="checkbox" id="STRENGTH" name="artistic_skills" value="1"></th>
-          <th> <input type="checkbox" id="DEVELOP" name="artistic_skills" value="1" data-diff='1'></th>
+          <th> <input type="checkbox" id="USE" name="artistic_skills" value="1" class="artistic_use"></th>
+          <th> <input type="checkbox" id="ENJOY" name="artistic_skills" value="1" class="artistic_enjoy"></th>
+          <th> <input type="checkbox" id="STRENGTH" name="artistic_skills" value="1" class="artistic_strength"></th>
+          <th> <input type="checkbox" id="DEVELOP" name="artistic_skills" value="1" class="artistic_develop"></th>
         </tr>
       </table>
     </form>
@@ -975,11 +978,15 @@
 
 
         <!-- RESULTS BAR GRAPH -->
-        <h3>Use, Enjoy, Stength and Develop</h3>
-        <!-- <h4>Thinking Skills</h4>
-          <progress id= "thinking_progressbar" max="100"></progress> -->
+        <!-- <h3>Use, Enjoy, Stength and Develop</h3>
+
         <h4>Artistic / Creative / Innovative Skills </h4>
-          <progress id= "artistic_progressbar" max="100"></progress>
+          <progress id="artistic_progressbar" max="100"></progress> -->
+
+
+
+
+          <canvas id = "barChartHorizontal"></canvas>
 
 
 

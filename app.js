@@ -290,6 +290,7 @@ $(document).ready(function(){
           totalDEVELOP_10 += isNaN(parseInt($(this).val())) ? 0 : parseInt($(this).val());
         });
         $("#artistic_skills_totalDEVELOP").val(totalDEVELOP_10);
+      
 
         });
 
@@ -301,67 +302,30 @@ $(document).ready(function(){
 
       // bar graph
 
-      $('input:checkbox[id=DEVELOP][name=artistic_skills]:checked').on('click', function(){
-        $('#artistic_progressbar').val($('#artistic_progressbar').val() + 5);
-        console.log('butts');
-      });
-
-
-
-
-
-
-      // $('.option').click(function(){
-      //   var $this = $(this);
-      //
-      //   if (!$this.data('voting'))
-      //   $this.data('voting', 0);
-      //
-      //   var voting = parseInt($this.data('voting'), 10);
-      //   voting ++;
-      //
-      //   $this.data('voting', voting);
-      //   $this.find('.score').html(voting);
-      //   $this.find('.artistic_progressbar').progressbar({value: voting});
+      // new Chart(document.getElementById("bar-chart-horizontal"), {
+      //   type: 'horizontalBar',
+      //   data: {
+      //     labels: ["Management Skills","Communication Skills", "Leadership Skills"],
+      //     datasets: [
+      //       {
+      //         // label: "USE", "ENJOY", "STRENGTH", "DEVELOP"
+      //         data: [ 10, 20, 30, 50]
+      //       }
+      //     ]
+      //   },
+      //   options: {
+      //     legend: {display: false},
+      //     title: {
+      //       display: true,
+      //       text: 'testing'
+      //     }
+      //   }
       // });
 
-
-
-
-
-
-
-
-
-
-        // function animateProgress(diff) {
-        //   var currValue=$("#progress").val();
-        //   var toValue = currValue + diff;
-        //
-        //   toValue = toValue < 0 ? 0 : toValue;
-        //   toValue = toValue >100 ? 100 : toValue;
-        //
-        //   $("#progress").animate({'value' : toValue}, 100);
-        // }
-
-
-
-      // $('management_skills').click(function(){
-      //   var $this = $(this);
-      //
-      //   if (!$this.data('voting'))
-      //       $this.data('voting',0);
-      //
-      //   var voting = parseInt($this.data('voting'),10);
-      //   voting++;
-      //
-      //   $this.data('voting', voting);
-      //   $this.find('.score').html(voting);
-      //   $this.find('.graph_bar').graph_bar({value:voting});
-      // });
-
-
-
+      // $(".artistic_use").on('click', function(){
+      //   $('artistic_progressbar').val() +5);
+      //   console.log('testing');
+      // })
 
 
 
