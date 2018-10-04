@@ -3,6 +3,12 @@
   font-family: Arial, cursive;
 }
 
+.wrapper {
+  margin-left: 20px;
+  margin-right: auto;
+  width: 900px;
+}
+
 .header, .skills_survey, .email_form {
   margin-left: 50px;
 }
@@ -15,10 +21,9 @@
 
 h3 {
   font-size: 12px;
-  word-spacing: 40px;
+  word-spacing: 20px;
   text-align: right;
-  margin: 20px 100px 20px 89px;
-
+  margin: 20px 110px 20px 40px;
 }
 
 table {
@@ -47,7 +52,8 @@ th {
   text-align: left;
   font-size: 12px;
   font-weight: normal;
-  margin: 10px 50px 10px 10px;
+  margin: 20px 50px 10px 10px;
+
 
 }
 
@@ -62,14 +68,6 @@ h2{
 
 
 }
-
-/*
-.management_skills {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-} */
-
 
 progress {
     min-width: 400px;
